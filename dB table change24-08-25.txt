@@ -1,0 +1,103 @@
+CREATE TABLE questionmaxmarks (
+    qmmBatchyear   VARCHAR(10)  NOT NULL,
+    qmmSubjectId   VARCHAR(20)  NOT NULL,
+    qmmMid         VARCHAR(10)  NOT NULL,
+    qmmSem         VARCHAR(10)  NOT NULL,
+    qmmYear        VARCHAR(10)  NOT NULL,
+    
+    max_obj_1      INT DEFAULT 0,
+    max_obj_2      INT DEFAULT 0,
+    max_obj_3      INT DEFAULT 0,
+    max_ass_1      INT DEFAULT 0,
+    max_ass_2      INT DEFAULT 0,
+    max_ass_3      INT DEFAULT 0,
+
+    max_1a         INT DEFAULT 0,
+    max_1b         INT DEFAULT 0,
+    max_2a         INT DEFAULT 0,
+    max_2b         INT DEFAULT 0,
+    max_3a         INT DEFAULT 0,
+    max_3b         INT DEFAULT 0,
+    max_4a         INT DEFAULT 0,
+    max_4b         INT DEFAULT 0,
+    max_5a         INT DEFAULT 0,
+    max_5b         INT DEFAULT 0,
+    max_6a         INT DEFAULT 0,
+    max_6b         INT DEFAULT 0,
+
+  
+);
+
+
+
+
+CREATE TABLE questionco (
+    qcBatchYear   VARCHAR(10)  NOT NULL,
+    qcSubjectId   VARCHAR(20)  NOT NULL,
+    qcMid         VARCHAR(10)  NOT NULL,
+    qcSem         VARCHAR(10)  NOT NULL,
+    qcYear        VARCHAR(10)  NOT NULL,
+    co_obj_1      VARCHAR(255),
+    co_obj_2      VARCHAR(255),
+    co_obj_3      VARCHAR(255),
+    co_ass_1      VARCHAR(255),
+    co_ass_2      VARCHAR(255),
+    co_ass_3      VARCHAR(255),
+    co_1a         VARCHAR(255),
+    co_1b         VARCHAR(255),
+    co_2a         VARCHAR(255),
+    co_2b         VARCHAR(255),
+    co_3a         VARCHAR(255),
+    co_3b         VARCHAR(255),
+    co_4a         VARCHAR(255),
+    co_4b         VARCHAR(255),
+    co_5a         VARCHAR(255),
+    co_5b         VARCHAR(255),
+    co_6a         VARCHAR(255),
+    co_6b         VARCHAR(255),
+    
+   
+);
+
+
+
+
+
+CREATE TABLE studentmidmarks (
+    sid            VARCHAR(20) NOT NULL,   -- student id
+    sname          VARCHAR(100) NOT NULL,  -- student name
+    sub_id         VARCHAR(20) NOT NULL,   -- subject id
+    student_sem    VARCHAR(10) NOT NULL,
+    student_year   VARCHAR(10) NOT NULL,
+    sbatch_year    VARCHAR(10) NOT NULL,
+    smmDepartment  VARCHAR(20) NOT NULL,
+    smmMid         VARCHAR(10) NOT NULL,   -- which mid (mid1 or mid2)
+
+    marks_obj_1    INT DEFAULT 0,
+    marks_obj_2    INT DEFAULT 0,
+    marks_obj_3    INT DEFAULT 0,
+
+    marks_ass_1    INT DEFAULT 0,
+    marks_ass_2    INT DEFAULT 0,
+    marks_ass_3    INT DEFAULT 0,
+
+    marks_1a       INT DEFAULT 0,
+    marks_1b       INT DEFAULT 0,
+    marks_2a       INT DEFAULT 0,
+    marks_2b       INT DEFAULT 0,
+    marks_3a       INT DEFAULT 0,
+    marks_3b       INT DEFAULT 0,
+    marks_4a       INT DEFAULT 0,
+    marks_4b       INT DEFAULT 0,
+    marks_5a       INT DEFAULT 0,
+    marks_5b       INT DEFAULT 0,
+    marks_6a       INT DEFAULT 0,
+    marks_6b       INT DEFAULT 0,
+
+   
+    midmark        INT DEFAULT 0,   -- total mid exam marks
+
+    
+);
+
+
